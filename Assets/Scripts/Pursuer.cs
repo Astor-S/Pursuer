@@ -27,6 +27,8 @@ public class Pursuer : MonoBehaviour
             _rigidbody.velocity = Vector3.Lerp(_rigidbody.velocity, _direction * _speed, _smoothness);
         }
         else
-            _rigidbody.velocity = Vector3.zero;     
+        {
+                _rigidbody.velocity = Vector3.zero;
+        }   
     }
 }
